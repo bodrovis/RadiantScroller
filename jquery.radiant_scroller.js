@@ -1,6 +1,6 @@
 /*!
  * jQuery RadiantScroller
- * Version: 0.0.1.beta1
+ * Version: 0.0.1.rc1
  * Copyright (c) 2013 Ilya Bodrov (http://radiant-wind.com)
  *
  * Requires: jQuery 1.7.0+
@@ -99,8 +99,8 @@
                     // If current page was not set previously, we set it now
                     wrapper.current_page = pagination.find('.radiant-page').first();
                 } else {
-                    // TODO: Rewrite. This page should be calculated depending on the current position
-                    wrapper.current_page = pagination.find('.radiant-page').first();
+                    var new_current_page = Math.ceil(wrapper.scrollLeft() / (visible_els * el_width));
+                    wrapper.current_page = $(pagination.find('.radiant-page').get(new_current_page));
                 }
                 wrapper.current_page.addClass('current-page');
             }
@@ -151,7 +151,6 @@
         easingType: 'swing',
         animateDuration: 700,
         rows: 2,
-        scrollBy: 1, // TODO: remove?
         useMouseWheel: false
     };
 
