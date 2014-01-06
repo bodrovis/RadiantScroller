@@ -1,6 +1,6 @@
 /*!
  * jQuery RadiantScroller
- * Version: 0.0.1
+ * Version: 0.0.1.beta1
  * Copyright (c) 2013 Ilya Bodrov (http://radiant-wind.com)
  *
  * Requires: jQuery 1.7.0+
@@ -31,14 +31,14 @@
         while((elements = elements.slice(per_row)).length > 0);
 
         // Wrapper with hidden scrollbars
-        scroller.wrap('<div class="radiant_scroller"></div>').wrap('<div class="radiant_scroller_wrapper"></div>');
+        scroller.wrap('<div class="radiant_scroller"></div>').wrap('<div class="radiant_scroller_wrapper" />');
         var wrapper = scroller.parent('.radiant_scroller_wrapper');
         var outer_wrapper = wrapper.parent('.radiant_scroller');
 
         wrapper.css('max-width', (scroller.vars.cols * el_width - scroller.vars.elementMargin) + 'px');
 
         // Next/previous buttons
-        var nav = $('<div class="radiant-navigation"></div>').insertAfter(wrapper);
+        var nav = $('<div class="radiant-navigation" />').insertAfter(wrapper);
         var prev = nav.append($('<div class="radiant-prev">prev</div>'));
         var next = nav.append($('<div class="radiant-next">next</div>'));
 
@@ -90,7 +90,7 @@
                 if (outer_wrapper.find('.radiant-pagination').size() > 0)
                     outer_wrapper.find('.radiant-pagination').remove();
 
-                var pagination = $('<div class="radiant-pagination"></div>').insertAfter(wrapper);
+                var pagination = $('<div class="radiant-pagination" />').insertAfter(wrapper);
                 for (var i = 0; i < pages; i++) {
                     pagination.append('<div class="radiant-page" data-page="' + (i + 1) + '">page</div>');
                 }
