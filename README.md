@@ -5,13 +5,16 @@ RadiantScroller can be cuztomized with the variety of options and some API metho
 
 The current version is 0.0.1 (07/01/2014).
 
+Documentation and demos can also be found at http://www.radiant-wind.com/plugins/radiant_scroller.
+
 ## Demos
 
 Images were taken from [FreeImages](http://www.freeimages.co.uk).
 
 * [Basic scroller with 3x2 grid with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
 * [Scroller with 3x2 grid with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
-* [Basic RadiantScroller's API demo](http://www.radiant-wind.com/code_examples/12)
+* [Scroller with one column and two rows](http://www.radiant-wind.com/code_examples/13)
+* [Basic Radiant Scroller's API](http://www.radiant-wind.com/code_examples/12)
 
 ## Requirements
 
@@ -36,7 +39,7 @@ Images were taken from [FreeImages](http://www.freeimages.co.uk).
 
 The `scroller-el` class is required.
 
-* Set up basic styling. In fact, only specifying margins and dimensions for the images in the scroller is required. This can be done like:
+* Set up basic styling. In fact, only specifying margins and dimensions for the elements in the scroller is required. This can be done like:
 
 ```css
 .radiant_scroller .scroller-el {
@@ -90,7 +93,7 @@ $(document).ready(function() {
     <tr>
       <th scope="row"><code>cols</code></th>
       <td><code>2</code></td>
-      <td><code>Integer</code> How many cols should the scroller have - basically this means how many elements
+      <td><code>Integer</code> How many (maximum) columns should the scroller have - basically this means how many elements
       will be visible at once horizontally (but if the scroller's width changes this value will also change).</td>
     </tr>
     <tr>
