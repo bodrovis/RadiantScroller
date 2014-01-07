@@ -84,7 +84,8 @@ $(document).ready(function() {
     <tr>
       <th scope="row"><code>cols</code></th>
       <td><code>2</code></td>
-      <td><code>Integer</code> How many cols should the scroller have.</td>
+      <td><code>Integer</code> How many cols should the scroller have - basically this means how many elements
+      will be visible at once horizontally (but if the scroller's width changes this value will also change).</td>
     </tr>
     <tr>
       <th scope="row"><code>easingType</code></th>
@@ -118,8 +119,7 @@ $(document).ready(function() {
     <tr>
       <th scope="row"><code>rows</code></th>
       <td><code>2</code></td>
-      <td><code>Integer</code> How many cols should the scroller have - basically this means how many elements
-      will be visible at once horizontally (but if the scroller's width changes this value will also change).</td>
+      <td><code>Integer</code> How many rows should the scroller have.</td>
     </tr>
     <tr>
       <th scope="row"><code>useMouseWheel</code></th>
