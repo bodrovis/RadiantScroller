@@ -198,4 +198,4 @@ More methods coming soon.
 
 This plugin is licensed under the [MIT License](https://github.com/bodrovis/RadiantScroller/blob/master/LICENSE.txt).
 
-Copyright (c) 2013 [Ilya Bodrov](http://radiant-wind.com)
+Copyright (c) 2014 [Ilya Bodrov](http://radiant-wind.com)
