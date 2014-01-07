@@ -91,8 +91,9 @@ $(document).ready(function() {
       <th scope="row"><code>easingType</code></th>
       <td><code>"swing"</code></td>
       <td><code>String</code> Easing type for the scrolling. You can specify any other type of easing but bear in mind
-      that jQuery has only a few easings included.
-      You will have to include [jQueryUI's effects and easings plugin](http://jqueryui.com/effect/#easing) to get more.</td>
+      that jQuery has only <code>swing</code> and <code>linear</code> easings included.
+      You will have to include
+      <a target="_blank" href="http://jqueryui.com/effect/#easing">jQueryUI's effects and easings plugin</a> to get more.</td>
     </tr>
     <tr>
       <th scope="row"><code>elementMargin</code></th>
@@ -126,7 +127,7 @@ $(document).ready(function() {
       <td><code>false</code></td>
       <td><code>Boolean</code> Whether support for the mousewheel scrolling should be enabled. Please note
       that when this value is set to <code>true</code>, you should hook up
-      [MouseWheel plugin](https://github.com/brandonaaron/jquery-mousewheel).</td>
+      <a target="_blank" href="https://github.com/brandonaaron/jquery-mousewheel">MouseWheel plugin</a>.</td>
     </tr>
   </tbody>
 </table>
