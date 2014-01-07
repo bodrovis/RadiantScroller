@@ -3,7 +3,7 @@
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
 RadiantScroller can be cuztomized with the variety of options and some API methods are also available.
 
-The current version is 0.0.2 (07/01/2014).
+The current version is 0.0.3 (08/01/2014).
 
 Documentation and demos can also be found at http://www.radiant-wind.com/plugins/radiant_scroller.
 
@@ -194,6 +194,10 @@ API action to invoke. Currently there are a few API methods available:
 
 * `radiantScroller('next')` - scroll one page forward
 * `radiantScroller('prev')` - scroll one page backward
+* `radiantScroller(<number>)` - scroll to a page with the specified number. Page numeration starts from 1. If a
+non-existent page is provided nothing happens.
+* `radiantScroller('by', <number>)` - scroll by a specified number of pages. For example if you are at the 1st page and
+call `my_scroller.radiantScroller('by', 2)` you scroll by 2 pages and end up at the 3rd page.
 
 More methods coming soon.
 
