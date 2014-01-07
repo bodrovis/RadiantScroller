@@ -168,6 +168,7 @@
                 case "next": $scroller.moveElements(1); break;
                 case "prev": $scroller.moveElements(-1); break;
                 // radiantScroller('by', 2) - scroll by 2 pages, not to the 2nd page
+                //TODO: check number
                 case "by": if (typeof options2 === "number") $scroller.moveElements(options2); break;
                 // Default behaviour: radiantScroller(3) means go to 3 page and page numeration starts from 1
                 // (whereas plugin has numeration starting from 0, so have to substract 1!!!)
