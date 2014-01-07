@@ -156,7 +156,6 @@ you set `addPagination` option to `true`):
     <div class="radiant-pagination">
         <div class="radiant-page current-page" data-page="1"></div>
         <div class="radiant-page" data-page="2"></div>
-        <div class="radiant-page" data-page="3"></div>
     </div>
     <div class="radiant-navigation">
         <div class="radiant-prev"></div>
