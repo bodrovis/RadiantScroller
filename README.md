@@ -3,6 +3,8 @@
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
 RadiantScroller can be cuztomized with the variety of options and some API methods are also available.
 
+The current version is 0.0.1 (07/01/2014).
+
 ## Demos
 
 * [Basic scroller with 3x2 grid and with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
