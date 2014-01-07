@@ -7,6 +7,8 @@ The current version is 0.0.1 (07/01/2014).
 
 ## Demos
 
+Images were taken from [FreeImages](http://www.freeimages.co.uk).
+
 * [Basic scroller with 3x2 grid and with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
 * [Scroller with 3x2 grid and with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
 * [Basic RadiantScroller's API demo](http://www.radiant-wind.com/code_examples/12)
