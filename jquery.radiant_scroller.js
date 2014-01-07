@@ -35,7 +35,9 @@
         var wrapper = scroller.parent('.radiant_scroller_wrapper');
         var outer_wrapper = wrapper.parent('.radiant_scroller');
 
-        wrapper.css('max-width', (scroller.vars.cols * el_width - scroller.vars.elementMargin) + 'px');
+        var max_wrapper_width = (scroller.vars.cols * el_width - scroller.vars.elementMargin) + 'px';
+        wrapper.css('max-width', max_wrapper_width);
+        outer_wrapper.css('max-width', max_wrapper_width);
 
         // Next/previous buttons
         var nav = $('<div class="radiant-navigation" />').insertAfter(wrapper);
@@ -65,20 +67,22 @@
                     function() { scroller.animating = false; }
                 );
 
-                wrapper.current_page.removeClass('current-page');
-                if (typeof page_el === 'undefined') {
-                    if (direction === 'right') {
-                        if (wrapper.current_page.next().size() > 0)
-                            wrapper.current_page = wrapper.current_page.next();
+                if (scroller.vars.addPagination) {
+                    wrapper.current_page.removeClass('current-page');
+                    if (typeof page_el === 'undefined') {
+                        if (direction === 'right') {
+                            if (wrapper.current_page.next().size() > 0)
+                                wrapper.current_page = wrapper.current_page.next();
+                        }
+                        else {
+                            if (wrapper.current_page.prev().size() > 0)
+                                wrapper.current_page = wrapper.current_page.prev();
+                        }
+                    } else {
+                        wrapper.current_page = page_el;
                     }
-                    else {
-                        if (wrapper.current_page.prev().size() > 0)
-                            wrapper.current_page = wrapper.current_page.prev();
-                    }
-                } else {
-                    wrapper.current_page = page_el;
+                    wrapper.current_page.addClass('current-page');
                 }
-                wrapper.current_page.addClass('current-page');
             }
         };
 
@@ -92,7 +96,7 @@
 
                 var pagination = $('<div class="radiant-pagination" />').insertAfter(wrapper);
                 for (var i = 0; i < pages; i++) {
-                    pagination.append('<div class="radiant-page" data-page="' + (i + 1) + '">page</div>');
+                    pagination.append('<div class="radiant-page" data-page="' + (i + 1) + '"></div>');
                 }
 
                 if (typeof wrapper.current_page === 'undefined') {

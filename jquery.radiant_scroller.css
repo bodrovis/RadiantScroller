@@ -33,6 +33,7 @@
 
 .radiant_scroller .radiant-next, .radiant_scroller .radiant-prev {
     position: absolute;
+    cursor: pointer;
 }
 
 /* ======== Pagination ======== */
@@ -43,8 +44,9 @@
 }
 
 .radiant_scroller .radiant-pagination .radiant-page {
-    float: left;
+    display: inline-block;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .radiant_scroller .radiant-pagination .radiant-page:last-of-type {
