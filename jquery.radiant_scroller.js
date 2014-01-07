@@ -1,6 +1,6 @@
 /*!
  * jQuery RadiantScroller
- * Version: 0.0.1.rc1
+ * Version: 0.0.1.rc2
  * Copyright (c) 2013 Ilya Bodrov (http://radiant-wind.com)
  *
  * Requires: jQuery 1.7.0+
@@ -39,8 +39,8 @@
 
         // Next/previous buttons
         var nav = $('<div class="radiant-navigation" />').insertAfter(wrapper);
-        var prev = nav.append($('<div class="radiant-prev">prev</div>'));
-        var next = nav.append($('<div class="radiant-next">next</div>'));
+        var prev = nav.append($('<div class="radiant-prev">' + scroller.vars.prevButtonText + '</div>'));
+        var next = nav.append($('<div class="radiant-next">' + scroller.vars.nextButtonText + '</div>'));
 
         // Scroller methods
         scroller.calculateVisibleElements = function() {
@@ -109,7 +109,9 @@
         // Binding events
         $(window).bindWithDelay('resize', function() {
             scroller.calculateVisibleElements();
-            scroller.createPagination();
+            if (scroller.vars.addPagination) {
+                scroller.createPagination();
+            }
         }, 500, true);
 
         nav.on('click', '.radiant-next', function() {
@@ -141,7 +143,9 @@
 
         // Init scroller
         scroller.calculateVisibleElements();
-        scroller.createPagination();
+        if (scroller.vars.addPagination) {
+            scroller.createPagination();
+        }
     };
 
     $.radiantScroller.defaults = {
@@ -151,7 +155,10 @@
         easingType: 'swing',
         animateDuration: 700,
         rows: 2,
-        useMouseWheel: false
+        useMouseWheel: false,
+        addPagination: false,
+        nextButtonText: '',
+        prevButtonText: ''
     };
 
     $.fn.radiantScroller = function(options) {
