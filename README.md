@@ -2,6 +2,11 @@
 
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
 
+## Demos
+
+* [Basic scroller with 3x2 grid and with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
+* [Scroller with 3x2 grid and with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
+
 ## Requirements
 
 1. jQuery 1.7.0+
@@ -36,8 +41,10 @@ The `scroller-el` class is required.
 }
 ```
 
-* Initialize the scroller. The values for `elementWidth` and `elementMargin` should be the same as your specified in the previous step otherwise the scroller's grid will be built incorrectly.
-You will probably want to specify scroller's grid dimensions with the `cols` and `rows` attributes (the default is 2x2 grid).
+* Initialize the scroller. The values for `elementWidth` and `elementMargin` should be the same as your specified in
+the previous step otherwise the scroller's grid will be built incorrectly.
+You will probably want to specify scroller's grid dimensions with the `cols` and `rows` attributes (the default is
+2x2 grid). All available options are listed in the "Options" section.
 
 ```js
 $(document).ready(function() {
@@ -52,10 +59,77 @@ $(document).ready(function() {
 
 * Style your scroller as needed.
 
-## Demos
+## Options
 
-* [Basic scroller with 3x2 grid and with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
-* [Scroller with 3x2 grid and with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>animateDuration</code></th>
+      <td><code>700</code></td>
+      <td><code>Integer</code> Animation duration for the scrolling. The value is specified in milliseconds.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>addPagination</code></th>
+      <td><code>false</code></td>
+      <td><code>Boolean</code> Whether the scroller should have pagination
+      (often displayed as small navigational dots) enabled.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>cols</code></th>
+      <td><code>2</code></td>
+      <td><code>Integer</code> How many cols should the scroller have.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>easingType</code></th>
+      <td><code>"swing"</code></td>
+      <td><code>String</code> Easing type for the scrolling. You can specify any other type of easing but bear in mind
+      that jQuery has only a few easings included.
+      You will have to include [jQueryUI's effects and easings plugin](http://jqueryui.com/effect/#easing) to get more.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>elementMargin</code></th>
+      <td><code>10</code></td>
+      <td><code>Integer</code> Horizontal (left/right) margin for the scroller's elements. This value should correspond
+      to the value that is provided in the styles.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>elementWidth</code></th>
+      <td><code>200</code></td>
+      <td><code>Integer</code> Width for the scroller's elements. This value should correspond
+      to the value that is provided in the styles.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>nextButtonText</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> Text to be shown on the "next" button.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>prevButtonText</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> Text to be shown on the "previous" button.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>rows</code></th>
+      <td><code>2</code></td>
+      <td><code>Integer</code> How many cols should the scroller have - basically this means how many elements
+      will be visible at once horizontally (but if the scroller's width changes this value will also change).</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>useMouseWheel</code></th>
+      <td><code>false</code></td>
+      <td><code>Boolean</code> Whether support for the mousewheel scrolling should be enabled. Please note
+      that when this value is set to <code>true</code>, you should hook up
+      [MouseWheel plugin](https://github.com/brandonaaron/jquery-mousewheel).</td>
+    </tr>
+  </tbody>
+</table>
 
 ## License
 
