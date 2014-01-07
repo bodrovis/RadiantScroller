@@ -58,7 +58,7 @@ $(document).ready(function() {
 });
 ```
 
-* Style your scroller as needed.
+* Style your scroller as needed (see Styling section and demos for more information).
 
 ## Options
 
@@ -133,6 +133,47 @@ $(document).ready(function() {
   </tbody>
 </table>
 
+## Styling
+
+`jquery.radiant_scroller.css` provides only required styles so you have to write some more styles to make the scroller
+look nice. When the scroller is initialized the following layout is being built (pagination will not be shown until
+you set `addPagination` option to `true`):
+
+```html
+<div class="radiant_scroller">
+    <div class="radiant_scroller_wrapper">
+        <div id="myScroller">
+            <div class="radiant_scroller_row">
+                <div class="scroller-el"><img src="image1.jpg" alt="Image1" /></div>
+                <div class="scroller-el"><img src="image2.jpg" alt="Image2" /></div>
+            </div>
+            <div class="radiant_scroller_row">
+                <div class="scroller-el"><img src="image3.jpg" alt="Image3" /></div>
+                <div class="scroller-el"><img src="image4.jpg" alt="Image4" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="radiant-pagination">
+        <div class="radiant-page current-page" data-page="1"></div>
+        <div class="radiant-page" data-page="2"></div>
+        <div class="radiant-page" data-page="3"></div>
+    </div>
+    <div class="radiant-navigation">
+        <div class="radiant-prev"></div>
+        <div class="radiant-next"></div>
+    </div>
+</div>
+```
+
+All elements except for `#myScroller` and `.scroller-el` are added dynamically.
+
+* `.radiant-pagination` contains navigational pages; the active page has the `current-page` class, so you can style
+it differently.
+* `.radiant-navigation` contains next and previous buttons. `.radiant-prev` and `.radiant-next` are positioned absolutely
+(and main wrapper `.radiant_scroller` is positioned relatively) so you can adjust its position as necessary.
+
+See demos to get the basic idea how the scroller can be styled.
+
 ## API
 
 To get access to the RadiantScroller's API you should initialize your scroller like this:
@@ -144,8 +185,8 @@ var my_scroller = $('#myScroller').radiantScroller({...});
 And then you can manage your scroller by calling `radiantScroller` on the `my_scroller` variable and passing it an
 API action to invoke. Currently there are a few API methods available:
 
-* `radiantScroller('next')` - scroll by one page forward
-* `radiantScroller('prev')` - scroll by one page backward
+* `radiantScroller('next')` - scroll one page forward
+* `radiantScroller('prev')` - scroll one page backward
 
 More methods coming soon.
 

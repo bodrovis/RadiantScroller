@@ -37,12 +37,6 @@
 }
 
 /* ======== Pagination ======== */
-.radiant_scroller .radiant-pagination {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 20px;
-}
-
 .radiant_scroller .radiant-pagination .radiant-page {
     display: inline-block;
     margin-right: 10px;
