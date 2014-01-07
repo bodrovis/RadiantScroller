@@ -7,6 +7,7 @@ RadiantScroller can be cuztomized with the variety of options and some API metho
 
 * [Basic scroller with 3x2 grid and with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
 * [Scroller with 3x2 grid and with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
+* [Basic RadiantScroller's API demo](http://www.radiant-wind.com/code_examples/12)
 
 ## Requirements
 
