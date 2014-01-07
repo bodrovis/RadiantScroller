@@ -9,8 +9,8 @@ The current version is 0.0.1 (07/01/2014).
 
 Images were taken from [FreeImages](http://www.freeimages.co.uk).
 
-* [Basic scroller with 3x2 grid and with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
-* [Scroller with 3x2 grid and with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
+* [Basic scroller with 3x2 grid with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
+* [Scroller with 3x2 grid with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
 * [Basic RadiantScroller's API demo](http://www.radiant-wind.com/code_examples/12)
 
 ## Requirements
@@ -193,6 +193,11 @@ API action to invoke. Currently there are a few API methods available:
 * `radiantScroller('prev')` - scroll one page backward
 
 More methods coming soon.
+
+## For Rails developers
+
+[jquery-radiantscroller-rails](https://github.com/bodrovis/jquery-radiantscroller-rails) gem provides an easy way
+to integrate Radiant Scroller into your Rails project.
 
 ## License
 
