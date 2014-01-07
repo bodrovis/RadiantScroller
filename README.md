@@ -1,6 +1,7 @@
 # jQuery RadiantScroller plugin
 
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
+RadiantScroller can be cuztomized with the variety of options and some API methods are also available.
 
 ## Demos
 
@@ -131,6 +132,22 @@ $(document).ready(function() {
     </tr>
   </tbody>
 </table>
+
+## API
+
+To get access to the RadiantScroller's API you should initialize your scroller like this:
+
+```js
+var my_scroller = $('#myScroller').radiantScroller({...});
+```
+
+And then you can manage your scroller by calling `radiantScroller` on the `my_scroller` variable and passing it an
+API action to invoke. Currently there are a few API methods available:
+
+* `radiantScroller('next')` - scroll by one page forward
+* `radiantScroller('prev')` - scroll by one page backward
+
+More methods coming soon.
 
 ## License
 
