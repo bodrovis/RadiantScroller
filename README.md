@@ -14,7 +14,8 @@ Images were taken from [FreeImages](http://www.freeimages.co.uk).
 * [Basic scroller with 3x2 grid with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
 * [Scroller with 3x2 grid with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
 * [Scroller with one column and two rows](http://www.radiant-wind.com/code_examples/13)
-* [Basic Radiant Scroller's API](http://www.radiant-wind.com/code_examples/12)
+* [Basic Radiant Scroller's API](http://www.radiant-wind.com/code_examples/12) (demonstrates that you can scroll by
+specified number of pages or directly to the page with specified number)
 
 ## Requirements
 
@@ -199,6 +200,7 @@ non-existent page is provided nothing happens.
 * `radiantScroller('by', <number>)` - scroll by a specified number of pages. For example if you are at the 1st page and
 call `my_scroller.radiantScroller('by', 2)` you scroll by 2 pages and end up at the 3rd page.
 
+To see them all in action open [this demo](http://www.radiant-wind.com/code_examples/13).
 More methods coming soon.
 
 ## For Rails developers
