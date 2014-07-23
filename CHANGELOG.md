@@ -1,5 +1,9 @@
 # RadiantScroller changelog
 
+## 0.0.4 (23/07/2014)
+
+* Fixed hanging of the page when resized to very low width
+
 ## 0.0.3 (08/01/2014)
 
 * Reworked pagination and scrolling

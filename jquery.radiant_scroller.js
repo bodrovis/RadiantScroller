@@ -1,7 +1,7 @@
 /*!
  * jQuery RadiantScroller
- * Version: 0.0.3 (07/01/2014)
- * Copyright (c) 2013 Ilya Bodrov (http://www.radiant-wind.com/plugins/radiant_scroller)
+ * Version: 0.0.4 (23/07/2014)
+ * Copyright (c) 2014 Ilya Bodrov (http://www.radiant-wind.com/plugins/radiant_scroller)
  *
  * Requires: jQuery 1.7.0+
  */
@@ -45,7 +45,7 @@
 
         // Scroller methods
         scroller.calculateVisibleElements = function() {
-            scroller.visible_els = Math.floor((wrapper.width() + scroller.vars.elementMargin) / el_width);
+            scroller.visible_els = (wrapper.width() + scroller.vars.elementMargin) / el_width;
         };
 
         scroller.moveElements = function(scrollBy) {
