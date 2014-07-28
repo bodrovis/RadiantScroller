@@ -101,8 +101,8 @@ $(document).ready(function() {
       <th scope="row"><code>delayDuration</code></th>
       <td><code>500</code></td>
       <td><code>Integer</code> How long the scroller will wait after the resizing to initiate recalculation
-      (this is done to ensure that the recalculation takes place only after the user has finished resizing the screen)
-      .</td>
+      (this is done to ensure that the recalculation takes place only after the user has finished resizing the screen).
+      </td>
     </tr>
     <tr>
       <th scope="row"><code>easingType</code></th>
