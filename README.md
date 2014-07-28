@@ -3,7 +3,7 @@
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
 RadiantScroller can be cuztomized with the variety of options and some API methods are also available.
 
-The current version is 0.0.4 (23/07/2014).
+The current version is 0.0.5 (28/07/2014).
 
 Documentation and demos can also be found at http://www.radiant-wind.com/plugins/radiant_scroller.
 
@@ -96,6 +96,13 @@ $(document).ready(function() {
       <td><code>2</code></td>
       <td><code>Integer</code> How many (maximum) columns should the scroller have - basically this means how many elements
       will be visible at once horizontally (but if the scroller's width changes this value will also change).</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>delayDuration</code></th>
+      <td><code>500</code></td>
+      <td><code>Integer</code> How long the scroller will wait after the resizing to initiate recalculation
+      (this is done to ensure that the recalculation takes place only after the user has finished resizing the screen)
+      .</td>
     </tr>
     <tr>
       <th scope="row"><code>easingType</code></th>

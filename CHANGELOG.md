@@ -1,5 +1,10 @@
 # RadiantScroller changelog
 
+## 0.0.5 (28/07/2014)
+
+* Fixed an error caused to crop some elements during resizing
+* Added `delayDuration` option
+
 ## 0.0.4 (23/07/2014)
 
 * Fixed hanging of the page when resized to very low width
