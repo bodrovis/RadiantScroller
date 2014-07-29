@@ -1,5 +1,11 @@
 # RadiantScroller changelog
 
+## 0.1.0 (29/07/2014)
+
+* Elements now may have captions
+* Added `useCaptions`, `captionsAnimateDuration` and `captionsAnimateEasingType` options
+* Added callback API
+
 ## 0.0.5 (28/07/2014)
 
 * Fixed an error caused to crop some elements during resizing

@@ -1,11 +1,13 @@
 # jQuery RadiantScroller plugin
 
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
-RadiantScroller can be cuztomized with the variety of options and some API methods are also available.
+RadiantScroller can be cuztomized with the variety of options. API methods and callbacks are available. Elements may
+also have animated captions.
 
-The current version is 0.0.5 (28/07/2014).
+The current version is 0.1.0 (29/07/2014).
 
-Documentation and demos can also be found at http://www.radiant-wind.com/plugins/radiant_scroller.
+Documentation and demos can also be found at
+[http://www.radiant-wind.com/plugins/radiant_scroller](http://www.radiant-wind.com/plugins/radiant_scroller).
 
 ## Demos
 
@@ -92,6 +94,20 @@ $(document).ready(function() {
       (often displayed as small navigational dots) enabled.</td>
     </tr>
     <tr>
+      <th scope="row"><code>captionsAnimateDuration</code></th>
+      <td><code>400</code></td>
+      <td><code>Integer</code> Animation duration for the captions.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>captionsAnimateEasingType</code></th>
+      <td><code>2</code></td>
+      <td><code>Integer</code> Easing type for the captions' animation. You can specify any other type of easing but
+      bear in mind
+      that jQuery has only <code>swing</code> and <code>linear</code> easings included.
+      You will have to include <a target="_blank" href="http://jqueryui.com/effect/#easing">jQueryUI's effects and
+      easings plugin</a> to get more.</td>
+    </tr>
+    <tr>
       <th scope="row"><code>cols</code></th>
       <td><code>2</code></td>
       <td><code>Integer</code> How many (maximum) columns should the scroller have - basically this means how many elements
@@ -138,6 +154,12 @@ $(document).ready(function() {
       <th scope="row"><code>rows</code></th>
       <td><code>2</code></td>
       <td><code>Integer</code> How many rows should the scroller have.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>useCaptions</code></th>
+      <td><code>false</code></td>
+      <td><code>Boolean</code> Whether captions should be enabled. Check <a href="#captions">Captions</a>
+      section for more information.</td>
     </tr>
     <tr>
       <th scope="row"><code>useMouseWheel</code></th>
@@ -189,6 +211,27 @@ it differently.
 
 See demos to get the basic idea how the scroller can be styled.
 
+## Captions
+
+Starting from version 0.1.0 scroller elements may have animated captions. To use them few things have to be done:
+
+* Set `useCaptions` options to `true`
+* Adjust `captionsAnimateDuration` and `captionsAnimateEasingType` if needed
+* Add `title` attribute to your elements like this:
+
+```html
+<div id="your_scroller_id">
+    <div class="scroller-el"><img src="image1.jpg" alt="Image1" title="This is a caption" /></div>
+    <div class="scroller-el"><img src="image2.jpg" alt="Image2" title="Another caption" /></div>
+</div>
+```
+
+* Enjoy the captions!
+
+By default captions appear at the bottom of the element with white centered text and black semi-opaque background. If
+you wish
+to style it differently, assign your styles to `.radiant-caption` class.
+
 ## API
 
 To get access to the RadiantScroller's API you should initialize your scroller like this:
@@ -209,6 +252,45 @@ call `my_scroller.radiantScroller('by', 2)` you scroll by 2 pages and end up at 
 
 To see them all in action open [this demo](http://www.radiant-wind.com/code_examples/13).
 More methods coming soon.
+
+## Callbacks
+
+Starting from version 0.1.0 the following callbacks are available:
+
+<table>
+  <thead>
+    <tr>
+      <th>Callback</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>loaded</code></th>
+      <td>Fires when the scroller has finished loading and is ready. Scroller is being passed as an argument.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>beforeMove</code></th>
+      <td>Fires before each scroller's moving animation. Scroller is being passed as an argument.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>afterMove</code></th>
+      <td>Fires before after scroller's moving animation. Scroller is being passed as an argument.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>lastPageReached</code></th>
+      <td>Fires when the scroller has finished loading and is ready. Scroller is being passed as an argument.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>afterHidingCaption</code></th>
+      <td>Fires after the caption was hidden. Caption is being passed as an argument.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>afterShowingCaption</code></th>
+      <td>Fires after the caption was showed. Caption is being passed as an argument.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## For Rails developers
 
