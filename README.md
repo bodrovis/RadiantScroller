@@ -103,7 +103,7 @@ $(document).ready(function() {
     </tr>
     <tr>
       <th scope="row"><code>captionsAnimateEasingType</code></th>
-      <td><code>2</code></td>
+      <td><code>'swing'</code></td>
       <td><code>Integer</code> Easing type for the captions' animation. You can specify any other type of easing but
       bear in mind
       that jQuery has only <code>swing</code> and <code>linear</code> easings included.
