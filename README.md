@@ -1,8 +1,8 @@
 # jQuery RadiantScroller plugin
 
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
-RadiantScroller can be cuztomized with the variety of options. [#API](API methods) and [#Callbacks](callbacks) are
-available. Elements may also have [#Captions](animated captions).
+RadiantScroller can be cuztomized with the variety of options. [API methods](#API) and [callbacks](#Callbacks) are
+available. Elements may also have [animated captions](#Captions).
 
 The current version is 0.1.0 (29/07/2014).
 
@@ -69,7 +69,7 @@ $(document).ready(function() {
 });
 ```
 
-* Style your scroller as needed (see [#Styling](Styling section) and [#Demos](demos) for more information).
+* Style your scroller as needed (check [Styling section](#Styling) and [demos](#Demos) for more information).
 
 ## Options
 
@@ -209,7 +209,7 @@ it differently.
 * `.radiant-navigation` contains next and previous buttons. `.radiant-prev` and `.radiant-next` are positioned absolutely
 (and main wrapper `.radiant_scroller` is positioned relatively) so you can adjust its position as necessary.
 
-See [#Demos](demos) to get the basic idea how the scroller can be styled.
+See [demos](#Demos) to get the basic idea how the scroller can be styled.
 
 ## Captions
 
