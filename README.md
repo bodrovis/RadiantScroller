@@ -1,10 +1,10 @@
 # jQuery RadiantScroller plugin
 
+[![npm version](https://badge.fury.io/js/radiant_scroller.svg)](http://badge.fury.io/js/radiant_scroller)
+
 This is a jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts.
 RadiantScroller can be cuztomized with the variety of options. [API methods](#api) and [callbacks](#callbacks) are
 available. Elements may also have [animated captions](#captions).
-
-The current version is 0.1.1 (05/12/2014).
 
 Documentation and demos can also be found at
 [http://www.radiant-wind.com/plugins/radiant_scroller](http://www.radiant-wind.com/plugins/radiant_scroller).
