@@ -4,7 +4,7 @@ This is a jQuery plugin that allows to create responsive scrollers (carousels) w
 RadiantScroller can be cuztomized with the variety of options. [API methods](#api) and [callbacks](#callbacks) are
 available. Elements may also have [animated captions](#captions).
 
-The current version is 0.1.0 (29/07/2014).
+The current version is 0.1.1 (05/12/2014).
 
 Documentation and demos can also be found at
 [http://www.radiant-wind.com/plugins/radiant_scroller](http://www.radiant-wind.com/plugins/radiant_scroller).

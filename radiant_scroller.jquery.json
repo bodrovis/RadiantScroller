@@ -1,6 +1,6 @@
 {
     "name": "radiant_scroller",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "title": "Radiant Scroller",
     "description": "The jQuery plugin that allows to create responsive scrollers (carousels) with grid and simple horizontal layouts. RadiantScroller can be cuztomized with the variety of options and. API methods and callbacks are available. Elements may also have animated captions.",
     "docs": "https://github.com/bodrovis/RadiantScroller",
@@ -13,6 +13,7 @@
         "url" : "http://radiant-wind.com/"
     },
     "keywords": [
+        "jquery-plugin",
         "scroller",
         "grid",
         "carousel",

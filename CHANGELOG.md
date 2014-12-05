@@ -1,5 +1,9 @@
 # RadiantScroller changelog
 
+## 0.1.1 (05/12/2014)
+
+* Replaced captions' background image with a simple black semi-opaque fill
+
 ## 0.1.0 (29/07/2014)
 
 * Elements now may have captions
