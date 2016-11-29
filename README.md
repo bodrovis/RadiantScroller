@@ -6,9 +6,6 @@ This is a jQuery plugin that allows to create responsive scrollers (carousels) w
 RadiantScroller can be cuztomized with the variety of options. [API methods](#api) and [callbacks](#callbacks) are
 available. Elements may also have [animated captions](#captions).
 
-Documentation and demos can also be found at
-[http://www.radiant-wind.com/plugins/radiant_scroller](http://www.radiant-wind.com/plugins/radiant_scroller).
-
 ## Demos
 
 Images were taken from [FreeImages](http://www.freeimages.co.uk).
@@ -304,4 +301,4 @@ to integrate Radiant Scroller into your Rails project.
 
 This plugin is licensed under the [MIT License](https://github.com/bodrovis/RadiantScroller/blob/master/LICENSE.txt).
 
-Copyright (c) 2014 [Ilya Bodrov](http://radiant-wind.com)
+Copyright (c) 2016 [Ilya Bodrov](http://bodrovis.tech)
