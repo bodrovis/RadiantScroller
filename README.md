@@ -10,14 +10,14 @@ available. Elements may also have [animated captions](#captions).
 
 Images were taken from [FreeImages](http://www.freeimages.co.uk).
 
-* [Basic scroller with 3x2 grid with no mousewheel support and no pagination](http://www.radiant-wind.com/code_examples/10)
-* [Scroller with 3x2 grid with mousewheel support and pagination](http://www.radiant-wind.com/code_examples/11)
-* [Scroller with one column and two rows](http://www.radiant-wind.com/code_examples/13)
-* [Basic Radiant Scroller's API](http://www.radiant-wind.com/code_examples/12) (demonstrates that you can scroll by
+* [Basic scroller with 3x2 grid with no mousewheel support and no pagination](http://bodrovis.tech/code_examples/10)
+* [Scroller with 3x2 grid with mousewheel support and pagination](http://bodrovis.tech/code_examples/11)
+* [Scroller with one column and two rows](http://bodrovis.tech/code_examples/13)
+* [Basic Radiant Scroller's API](http://bodrovis.tech/code_examples/12) (demonstrates that you can scroll by
 specified number of pages or directly to the page with specified number)
-* [Radiant Scroller with captions](http://www.radiant-wind.com/code_examples/18) (also demonstrates how to add
+* [Radiant Scroller with captions](http://bodrovis.tech/code_examples/18) (also demonstrates how to add
 jQueryUI's easings)
-* [Radiant Scroller's callback API](http://www.radiant-wind.com/code_examples/19)
+* [Radiant Scroller's callback API](http://bodrovis.tech/code_examples/19)
 
 ## Requirements
 
